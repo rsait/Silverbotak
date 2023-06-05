@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=1280, user-scalable=no" />
+		<title>Urola Kosta</title>
+        <script type="text/javascript" src="vendor/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="vendor/js.cookie-2.2.1.min.js"></script>
+		<script type="text/javascript" src="/libs/qi/2/qi.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+        <link rel="stylesheet" href="css/master.css" />
+        <!-- Icons font CSS-->
+        <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+        <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <!-- Font special for pages-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+        <!-- Vendor CSS-->
+        <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+        <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+        <!-- Main CSS-->
+        <link href="css/user.css" rel="stylesheet" media="all">
+
+        <script type="text/javascript">
+            function borrarCookies() {
+                Cookies.remove('numerosPuntos');
+                Cookies.remove('numerosTerminado');
+                Cookies.remove('numerosTimer');
+                Cookies.remove('triangulosPuntos');
+                Cookies.remove('triangulosTerminado');
+                Cookies.remove('triangulosTimer');
+                Cookies.remove('parejasTimer');
+                Cookies.remove('parejasTerminado');
+                Cookies.remove('parejasPuntos');
+                Cookies.remove('tiempoTotal');
+                Cookies.remove('undefined');
+            }
+        </script>
+        
+	</head>
+    <body onload="borrarCookies();negarGoogle()">
+        
+		<div class="contenedorGeneral">
+            <div class="barraSuperior">
+                <img src="icons/menu/button-logo-rsait-w.png" class="button-logo" id="button-logo" />
+                <img src="icons/menu/button-home.png" class="button-home" id="button-home" onclick="procesarVoz('inicio')"/>
+                <img src="icons/menu/button-back.png" class="button-back" id="button-back" onclick="procesarVoz('inicio')" />
+            </div>
+            
+            
+            <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+                <div class="wrapper wrapper--w780">
+                    <div class="card card-4">
+                        <div class="card-body">
+                            <div class="card-body-top">
+                                <div class="card-body-top-column">
+                                    <h2 class="title">Registrar usuario</h2>
+                                </div>
+                                <div class="card-body-top-column">
+                                    <div class="profile-img-container">
+                                        <div class="d-flex justify-content-center h-100">
+                                            <div class="image_outer_container">
+                                                <div class="image_inner_container">
+                                                    <img id="profile-img" src="imagenes/user/no-profile.jpg" onclick="clickRegistrar()">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body-top-column">
+                                    <button class="btn-profile btn--radius-2 btn--blue" onclick="clickFoto()">Hacer Foto</button>
+                                </div>
+                            </div>
+                            
+                            <form id="form">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">Nombre</label>
+                                            <label class="asterisco">*</label>
+                                            <input class="input--style-4" type="text" id="first-name" onfocus="this.value=''" value="Nombre">
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">Apellidos</label>
+                                            <label class="asterisco">*</label>
+                                            <input class="input--style-4" type="text" id="last-name" onfocus="this.value=''" value="Apellidos">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">Fecha de nacimiento</label>
+                                            <label class="asterisco">*</label>
+                                            <div class="input-group-icon">
+                                                <input class="input--style-4 js-datepicker" type="date" id="birthday" onfocus="this.value=''" value="1870-01-01">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">G&eacute;nero</label>
+                                            <div class="p-t-10">
+                                                <label class="radio-container m-r-12">Hombre
+                                                    <input type="radio" checked="checked" name="gender" id="gender-male">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="radio-container m-r-12">Mujer
+                                                    <input type="radio" name="gender" id="gender-female" >
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="radio-container">Otro
+                                                    <input type="radio" name="gender" id="gender-other" >
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">Email</label>
+                                            <label class="asterisco">*</label>
+                                            <input class="input--style-4" type="email" id="email" onfocus="this.value=''" value="nombre@ejemplo.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-2-3">
+                                        <div class="input-group">
+                                            <label class="label">Localidad</label>
+                                            <input class="input--style-4" type="text" id="city" onfocus="this.value=''" value="Ciudad">
+                                        </div>
+                                    </div>
+                                    <div class="col-3-3">
+                                        <div class="input-group">
+                                            <label class="label">C&oacute;digo Postal</label>
+                                            <input class="input--style-4" type="number" id="postalcode" onfocus="this.value=''" value="00000">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" onclick="clickRegistrar()">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jquery JS-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <!-- Vendor JS-->
+        <script src="vendor/select2/select2.min.js"></script>
+        <script src="vendor/datepicker/moment.min.js"></script>
+        <script src="vendor/datepicker/daterangepicker.js"></script>
+
+        <!-- Main JS-->
+        <script src="js/user-register.js"></script>
+
+	</body>
+</html>

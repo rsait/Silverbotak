@@ -1,0 +1,92 @@
+/* Contenedor cognitivas */
+.contenedorLoginShow {
+    position: absolute;
+    background: #A9D3E7 0% 0% no-repeat padding-box;
+    top: 350px;
+    left: 64px;
+    width: 320px;
+    height: 377px;
+    z-index: 2;
+    border-radius: 25px;
+}
+.contenedorLoginHide {
+    display: none;
+}
+.textoLogin {
+    position: absolute;
+    background: transparent;
+    top: 208px;
+    left: 90px;
+    width: 140px;
+    height: 63px;
+    z-index: 3;
+    font: Bold 23px/40px Tw Cen MT;
+    color: #194b63;
+    text-align: center;
+}
+
+/* Contenedor emocionales */
+.contenedorRegistroShow {
+    position: absolute;
+    background: #EC6779 0% 0% no-repeat padding-box;
+    top: 350px;
+    left: 448px;
+    width: 320px;
+    height: 377px;
+    z-index: 2;
+    border-radius: 25px;
+}
+
+.contenedorRegistroHide {
+    display: none;
+}
+
+.textoRegistro {
+    position: absolute;
+    background: transparent;
+    top: 208px;
+    left: 87px;
+    width: 146px;
+    height: 63px;
+    z-index: 3;
+    font: Bold 25px/40px Tw Cen MT;
+    color: #63151f;
+    text-align: center;
+}
+
+/* Contenedor fisicas */
+.contenedorTrivial {
+    position: absolute;
+    background: #AACE7B 0% 0% no-repeat padding-box;
+    top: 350px;
+    left: 832px;
+    width: 320px;
+    height: 377px;
+    z-index: 2;
+    border-radius: 25px;
+}
+.textoTrivial {
+    position: absolute;
+    background: transparent;
+    top: 208px;
+    left: 90px;
+    width: 140px;
+    height: 63px;
+    z-index: 3;
+    font: Bold 23px/40px Tw Cen MT;
+    color:#334d13;
+    text-align: center;
+}
+.textoCentral {
+    position: absolute;
+    background: #e9e797;
+    border-radius: 25px;
+    top: 85px;
+    left: 240px;
+    width: 800px;
+    height: 90px;
+    z-index: 4;
+    text-align: center;
+    font: Bold 28px/40px Tw Cen MT;
+    color: #616017;
+}

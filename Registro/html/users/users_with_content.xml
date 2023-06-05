@@ -1,0 +1,24 @@
+<data>
+	<user>
+		<id>Unai_0</id>
+		<firstname>Unai</firstname>
+		<lastname>Zabala</lastname>
+		<birthday>1994-03-17</birthday>
+		<gender>Male</gender>
+		<email>unai.zabalac@ehu.eus</email>
+		<city>Donostia</city>
+		<postalcode>2011</postalcode>
+		<profileimage>/home/nao/.local/share/PackageManager/apps/urolakosta-5a7c76/html/users/profiles/Unai_0.jpg</profileimage>
+	</user>
+	<user>
+		<id>Igor_1</id>
+		<firstname>Igor</firstname>
+		<lastname>Rodriguez</lastname>
+		<birthday>1986-10-23</birthday>
+		<gender>Male</gender>
+		<email>igor.rodriguez@ehu.eus</email>
+		<city>Berriz</city>
+		<postalcode>48240</postalcode>
+		<profileimage>/home/nao/.local/share/PackageManager/apps/urolakosta-5a7c76/html/users/profiles/tmp.jpg</profileimage>
+	</user>
+</data>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=1280, user-scalable=no" />
+		<title>Urola Kosta</title>
+        <script type="text/javascript" src="vendor/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="vendor/js.cookie-2.2.1.min.js"></script>
+        <script type="text/javascript" src="vendor/alertify.min.js"></script>
+        <script type="text/javascript"src="/libs/qi/2/qi.js"></script>
+        
+        <script type="text/javascript"src="js/script.js"></script>
+        <link rel="stylesheet" href="css/master.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
+
+        <!-- For user login window -->
+        <link href="css/user-login.css" rel="stylesheet" media="all">
+        <script type="text/javascript">
+            function borrarCookies() {
+                Cookies.remove('numerosPuntos');
+                Cookies.remove('numerosTerminado');
+                Cookies.remove('numerosTimer');
+                Cookies.remove('triangulosPuntos');
+                Cookies.remove('triangulosTerminado');
+                Cookies.remove('triangulosTimer');
+                Cookies.remove('parejasTimer');
+                Cookies.remove('parejasTerminado');
+                Cookies.remove('parejasPuntos');
+                Cookies.remove('tiempoTotal');
+                Cookies.remove('undefined');
+            }
+        </script>
+    </head>
+    <body onload="borrarCookies();">
+        <div class="contenedorGeneral">
+            
+            <div class="textoCentral" id="textoCentral">
+                <p>Hola, soy Pepper:<br>dime qué te gustaría hacer o seleciónalo en mi tablet</p>
+            </div>
+
+            <!-- Start login/logout-->
+
+            <div class="contenedorLoginShow" id="contenedorLogin"onclick="procesarVoz('loguearse')">
+                <p class="textoLogin">Iniciar Sesi&oacute;n</p>
+            </div>
+
+            <div class="contenedorLoginHide" id="contenedorLogout" onclick="procesarVoz('cerrarSesion')">
+                <p class="textoLogin">Cerrar Sesi&oacute;n</p>
+            </div>
+
+            <!-- End login/logout-->
+
+            <!-- Start register/modify -->
+            <div class="contenedorRegistroShow" id="contenedorRegistro" onclick="procesarVoz('añadirusuario')">
+                <p class="textoRegistro">Registrar</p>
+            </div>
+
+            <div class="contenedorRegistroHide" id="contenedorModificar" onclick="procesarVoz('editarUsuario')">
+                <p class="textoRegistro">Modificar Datos</p>
+            </div>
+
+            <!-- End register/modify -->
+            
+            <!-- Start Trivial -->
+            <div class="contenedorTrivial" onclick="procesarVoz('jugarTrivial')">
+                <p class="textoTrivial">Jugar</p>
+            </div>
+            <!-- End Trivial -->
+            
+        </div>
+    </body>
+</html>

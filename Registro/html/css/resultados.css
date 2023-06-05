@@ -1,0 +1,314 @@
+/* Barra Naranja */
+.barraNaranja {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 850px;
+    height: 80px;
+    background: #FAC699 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 2px #0000001A;
+    opacity: 1;
+    z-index: 4;
+}
+.texto1 {
+    position: absolute;
+    top: 25px;
+    left: 172px;
+    width: 405px;
+    height: 28px;
+    text-align: left;
+    font: Bold 26px/32px Tw Cen MT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    z-index: 5;
+}
+.texto2 {
+    position: absolute;
+    top: 25px;
+    left: 354px;
+    width: 14px;
+    height: 28px;
+    text-align: left;
+    font: Bold 26px/32px Tw Cen MT;
+    letter-spacing: 0;
+    color: #EC644E;
+    opacity: 0.8;
+    z-index: 5;
+}
+.texto3 {
+    position: absolute;
+    top: 25px;
+    left: 435px;
+    width: 405px;
+    height: 28px;
+    text-align: left;
+    font: Bold 26px/32px Tw Cen MT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    z-index: 5;
+}
+.texto4 {
+    position: absolute;
+    top: 25px;
+    left: 595px;
+    width: 96px;
+    height: 28px;
+    text-align: left;
+    font: Bold 26px/32px Tw Cen MT;
+    letter-spacing: 0;
+    color: #EC644E;
+    opacity: 0.8;
+    z-index: 5;
+}
+/* columna logica */
+.columnaLogica {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 283px;
+    height: 540px;
+    background: #A9D3E7 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 2;
+}
+.textoLogica {
+    position: absolute;
+    top: 114px;
+    left: 107px;
+    width: 70px;
+    height: 26px;
+    text-align: left;
+    font: Bold 26px Tw Cen MT;
+    letter-spacing: 0;
+    color: #000000;
+    z-index: 3;
+}
+.aciertosLogica {
+    position: absolute;
+    top: 150px;
+    left: 107px;
+    width: 70px;
+    height: 52px;
+    font: normal 16px Tw Cen MT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    z-index: 3;
+}
+.numAciertosLogica {
+    position: absolute;
+    top: 150px;
+    left: 173px;
+    width: 70px;
+    height: 52px;
+    font: normal 16px Tw Cen MT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    z-index: 3;
+}
+.tiempoLogica {
+    position: absolute;
+    top: 150px;
+    left: 107px;
+    width: 70px;
+    height: 52px;
+    font: normal 16px Tw Cen MT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    z-index: 3;
+}
+.numTiempoLogica {
+    position: absolute;
+    top: 150px;
+    left: 170px;
+    width: 70px;
+    height: 52px;
+    font: normal 16px Tw Cen MT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    z-index: 3;
+}
+/* columna memoria */
+.columnaMemoria {
+    position: absolute;
+    top: 80px;
+    left: 283px;
+    width: 283px;
+    height: 540px;
+    background: #EC6779 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 2;
+}
+.textoMemoria {
+    position: absolute;
+    top: 114px;
+    left: 93px;
+    width: 70px;
+    height: 26px;
+    text-align: left;
+    font: Bold 26px Tw Cen MT;
+    letter-spacing: 0;
+    color: #000000;
+    z-index: 3;
+}
+.aciertosMemoria {
+    position: absolute;
+    top: 150px;
+    left: 107px;
+    width: 70px;
+    height: 52px;
+    font: normal 16px Tw Cen MT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    z-index: 3;
+}
+.numAciertosMemoria {
+    position: absolute;
+    top: 150px;
+    left: 173px;
+    width: 70px;
+    height: 52px;
+    font: normal 16px Tw Cen MT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    z-index: 3;
+}
+/* columna matemáticas */
+.columnaMatematicas {
+    position: absolute;
+    top: 80px;
+    left: 566px;
+    width: 284px;
+    height: 540px;
+    background: #AACE7B 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 2;
+}
+.textoMatematicas {
+    position: absolute;
+    top: 114px;
+    left: 72px;
+    width: 70px;
+    height: 26px;
+    text-align: left;
+    font: Bold 26px Tw Cen MT;
+    letter-spacing: 0;
+    color: #000000;
+    z-index: 3;
+}
+.aciertosMatematicas {
+    position: absolute;
+    top: 150px;
+    left: 107px;
+    width: 70px;
+    height: 52px;
+    font: normal 16px Tw Cen MT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    z-index: 3;
+}
+.numAciertosMatematicas {
+    position: absolute;
+    top: 150px;
+    left: 173px;
+    width: 70px;
+    height: 52px;
+    font: normal 16px Tw Cen MT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    z-index: 3;
+}
+.tiempoMatematicas {
+    position: absolute;
+    top: 150px;
+    left: 107px;
+    width: 70px;
+    height: 52px;
+    font: normal 16px Tw Cen MT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    z-index: 3;
+}
+.numTiempoMatematicas {
+    position: absolute;
+    top: 150px;
+    left: 170px;
+    width: 70px;
+    height: 52px;
+    font: normal 16px Tw Cen MT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    z-index: 3;
+}
+/* columna recomendaciones */
+.columnaRecomendaciones {
+    position: absolute;
+    top: 0px;
+    left: 850px;
+    width: 430px;
+    height: 620px;
+    background: #EBE9E9 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 2;
+}
+.tituloRecomendaciones {
+    position: absolute;
+    top: 114px;
+    left: 115px;
+    width: fit-content;
+    height: 26px;
+    text-align: center;
+    font: Bold 26px Tw Cen MT;
+    letter-spacing: 0;
+    color: #000000;
+    z-index: 3;
+}
+.textoRecomendaciones {
+    position: absolute;
+    top: 180px;
+    left: 64px;
+    width: 302px;
+    height: 440px;
+    font: 22px Tw Cen MT;
+    letter-spacing: 0;
+    color: #000000;
+    z-index: 2;
+}
+.p1 {
+    position: absolute;
+    top: 223px;
+    left: 80px;
+    width: 125px;
+    height: 125px;
+    z-index: 4;
+}
+.p2 {
+    position: absolute;
+    top: 223px;
+    left: 80px;
+    width: 125px;
+    height: 125px;
+    background-image: url("imagenes/resultados/p2.png");
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    z-index: 4;
+}
+.seVe {
+    visibility: hidden;
+}
+.textoPuntos {
+    position: absolute;
+    top: 272px;
+    left: 111px;
+    width: 65px;
+    height: 71px;
+    line-height: 60px;
+    color: #FFFFFF;
+    font: bold 24px Segoe UI;
+    text-align: center;
+    z-index: 20;
+}

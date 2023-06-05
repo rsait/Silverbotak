@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=1280, user-scalable=no" />
+		<title>Urola Kosta</title>
+        <script type="text/javascript" src="vendor/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="vendor/js.cookie-2.2.1.min.js"></script>
+        <script type="text/javascript" src="vendor/alertify.min.js"></script>
+        <script type="text/javascript"src="/libs/qi/2/qi.js"></script>
+        
+        <script type="text/javascript"src="js/script.js"></script>
+        <link rel="stylesheet" href="css/master.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
+
+        <!-- For user login window -->
+        <link href="css/user-login.css" rel="stylesheet" media="all">
+        <script type="text/javascript">
+            function borrarCookies() {
+                Cookies.remove('numerosPuntos');
+                Cookies.remove('numerosTerminado');
+                Cookies.remove('numerosTimer');
+                Cookies.remove('triangulosPuntos');
+                Cookies.remove('triangulosTerminado');
+                Cookies.remove('triangulosTimer');
+                Cookies.remove('parejasTimer');
+                Cookies.remove('parejasTerminado');
+                Cookies.remove('parejasPuntos');
+                Cookies.remove('tiempoTotal');
+                Cookies.remove('undefined');
+            }
+        </script>
+    </head>
+    <body onload="negarGoogle();borrarCookies();">
+        <div class="contenedorGeneral">
+            <div class="barraSuperior">
+                <img src="icons/menu/button-logo-rsait-w.png" class="button-logo" id="button-logo" />
+                <img src="icons/menu/button-volume.png" class="button-volume" id="botonVolumen"/>
+
+                <img src="icons/menu/button-poweroff.png" class="button-power-show" id="botonApagar" />
+                <img src="icons/menu/button-exit.png" class="button-power-hide" id="botonLogout" onclick="procesarVoz('cerrarSesion')" />
+                
+                <div class="button-user-show" id="button-user-add" onclick="procesarVoz('añadirusuario')">
+                    <img src="icons/menu/button-user-add.png" />
+                </div>
+                <div class="button-user-hide" id="button-user-login" onclick="procesarVoz('editarusuario')">
+                    <img src="icons/menu/button-user-edit.png" />
+                </div>
+
+                <div class="button-login" id="button-login" onclick="procesarVoz('loguearse')">
+                    <img src="icons/menu/button-user-login.png" />
+                </div>
+                
+            </div>
+            <div class="contenedorSlider" id="contenedorSlider">
+                <input type="range" min="0" max="100" value="100" step="10" class="slider" id="sliderVolumen" ontouchend="ajustarVolumen()">
+            </div>
+				
+            <div class="textoCentral" id="textoCentral">
+                <p>Hola, soy Pepper:<br>dime qué te gustaría hacer o seleciónalo en mi tablet</p>
+            </div>
+            <div class="contenedorVisitar">
+                <img src="imagenes/index/website-g.png" class="logoUrolaIndex" id="logoUrolaIndex" />
+                <span class="textoVisitar" id="textoVisitar">Visitar la web</span>
+            </div>
+            <div class="contenedorVideo" >
+                <img src="imagenes/index/youtube.png" class="youtube" id="youtube" />
+                <span class="textoVideo" id="textoVideo">Ver un vídeo</span>
+            </div>
+            <div class="contenedorConversacion">
+                <img src="imagenes/index/conversacion.png" class="conversacion" id="conversacion" />
+                <span class="textoConversacion" id="textoConversacion">Conversacion en Euskera</span>
+            </div>
+            <div class="contenedorEntrenar" >
+                <img src="imagenes/index/entrenamiento.png" class="entrenamiento" id="entrenamiento"/>
+                <span class="textoEntrenar" id="textoEntrenar">Entrenar cuerpo y mente</span>
+            </div>
+            <div class="contenedorCognitivas" >
+                <img src="imagenes/index/cognitivas.png" class="cognitivas" id="cognitivas" />
+                <span class="textoCognitivas" id="textoCognitivas">Habilidades cognitivas</span>
+            </div>
+            <div class="contenedorEmocionales" >
+                <img src="imagenes/index/emocionales.png" class="emocionales" id="emocionales" />
+                <span class="textoEmocionales" id="textoEmocionales">Habilidades emocionales</span>
+            </div>
+            <div class="contenedorFisicas">
+                <img src="imagenes/index/fisicas.png" class="fisicas" id="fisicas" />
+                <span class="textoFisicas" id="textoFisicas">Habilidades físicas</span>
+            </div>
+            
+        </div>
+    </body>
+</html>
