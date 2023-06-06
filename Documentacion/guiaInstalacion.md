@@ -28,7 +28,7 @@ Código de licencia:
 
 Si queremos desarrollar un programa fuera del entorno de *Choregraphe* y queremos que este se comunique bien con *Choregraphe* o directamente con el robot, necesitaremos el **SDK de Naoqi**. Para instalarlo, deberemos descargar del mismo [enlace](https://www.aldebaran.com/en/support/pepper-naoqi-2-9/downloads-softwares) el SDK que se encuentra en el apartado **Old: Pepper SDK 2.5.10**. 
 
-Después de descargarlo, primero de tod lo vamos a descomprimir y mover a la carpeta donde queramos instalarlo. Para poder usar la librería desde **python 2.7** tendremos que añadir una variable de entorno en nuestro sistema. Para hacer eso en **Windows**, iremos a Ajustes > Sistema > Información > Configuración avanzada del sistema > Variables de entorno. Ahí nos encontraremos con dos opciones: 
+Después de descargarlo, primero de todo lo vamos a descomprimir y mover a la carpeta donde queramos instalarlo. Para poder usar la librería desde **python 2.7** tendremos que añadir una variable de entorno en nuestro sistema. Para hacer eso en **Windows**, iremos a Ajustes > Sistema > Información > Configuración avanzada del sistema > Variables de entorno. Ahí nos encontraremos con dos opciones: 
 1. Variables para el usuario
 2. Variables del sistema
 
