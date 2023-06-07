@@ -18,9 +18,6 @@ Código de licencia:
 
 ### Python 2.7
 
-
-
-
 <div style="color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc;padding:9px;margin-bottom:10px;border:1px solid transparent;border-radius:4px">
     <img src="images/warning.png" width="24px" style="text-align:left;float:left"></img><strong style="margin-left:10px">Atención!</strong> El SDK de NAOqi solo funciona en la versión de 32 bits de Python 2.7 
 </div>
